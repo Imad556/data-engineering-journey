@@ -45,6 +45,25 @@ def count_occurences(numbers, target):
 def is_palindrome(numbers):
     return numbers == numbers[::-1]
     
-    
 
+ #CREATING DEEPCOPY OF NESTED LISTS
+import copy
+nested_list = [[1, 2, 3], [4, 5, 6]]
+deep_copy = copy.deepcopy(nested_list)
+
+#DOUBLE THE MATRIX
+matrix = [[1, 2, 3], [4, 5, 6]]
+doubled_matrix = [[element * 2 for element in row] for row in matrix]
+
+#FLATTENING A NESTED LIST
+def flatten(nested_list):
+    flat_list = []
+    for sublist in nested_list:
+        for item in sublist:
+            flat_list.append(item)
+    return flat_list
+
+
+names= ["Alice", "Bob", "Charlie"]
+A=[name for name in names if name.startswith('A')]
 
