@@ -37,3 +37,28 @@ def fizz_buzz(n):
             print(i)
 
 fizz_buzz(15)  # Example usage
+
+
+
+#ENUMERATE FUNCTION
+groceries = ["milk", "bread", "eggs", "apples"]
+for index, item in enumerate(groceries, start=1):
+    print(f"{index}: {item}")
+
+
+#another example of enumerate with multiple lists
+students = ["Alice", "Bob", "Charlie", "David"]
+marks = [85, 42, 77, 33]
+for index, student,mark in enumerate(students,marks, start=1):
+    if mark < 40:
+        print(f"{index}. {student} has failed with a mark of {mark}.")
+    else:
+        print(f"{index}. {student} has passed with a mark of {mark}.")
+
+
+#INCREASING PRICES BY PERCENTAGE
+prices = [50, 75, 100, 200]
+def increase_prices(prices, percentage):
+    for i in range(len(prices)):
+        prices[i] += prices[i] * (percentage / 100)
+    return prices
