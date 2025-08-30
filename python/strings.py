@@ -14,8 +14,8 @@ def is_palindrome(s):
 
 #PROBLEM 3:
 s=input().strip()
-even_chars=[::2]
-odd_chars=[1::2]
+even_chars=s[::2]
+odd_chars=s[1::2]
 print(even_chars)
 print(odd_chars)
 
@@ -25,7 +25,6 @@ def anagram_check(s1, s2):
 
 
 #PROBLEM 5:
-
 from collections import Counter
 def count_characters(s):
     count= Counter(s)
